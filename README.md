@@ -6,10 +6,11 @@
 
 A modern food delivery platform demonstrating full-stack development skills with proper testing, documentation, and production-ready features.
 
-**Live Demo**:   
+**Live Demo**:  http://foodapp-dev-1995.s3-website.eu-north-1.amazonaws.com/home 
+
 **Video Demo**: 
 
-[![Application Demo](link-to-your-video-or-gif)](link-to-your-video)
+
 
 ## 🛠 Tech Stack
 
