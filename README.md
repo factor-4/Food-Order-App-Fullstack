@@ -59,61 +59,133 @@ npm install
 npm start
 See frontend README for detailed setup
 
-# API Documentation
-The backend provides a comprehensive REST API with full documentation available at:
-http://localhost:8080/swagger-ui.html [Add if you have Swagger]
+## API Documentation
 
-Key Endpoints:
+The backend provides a comprehensive REST API for managing users, menu items, orders, payments, and reviews. Full interactive documentation is available via Swagger UI - 
+http://16.171.29.151:8090/swagger-ui/index.html
+.
 
-POST /api/auth/signup - User registration
+# Authentication
 
-POST /api/orders - Create new order
+POST /api/auth/register – Register a new user
 
-GET /api/restaurants - Browse restaurants
+POST /api/auth/login – Login and obtain authentication token
 
-[Add more key endpoints]
+# User Management
 
-✨ Key Features
-🔐 Authentication & Security
-JWT-based authentication
+GET /api/users/account – Get details of the logged-in user
 
-Role-based access control (Customer, Admin, Delivery)
+PUT /api/users/update – Update logged-in user details (supports profile image upload)
 
-Secure password handling
+DELETE /api/users/deactivate – Deactivate logged-in user account
 
-💳 Payments & Orders
-Stripe payment integration
+GET /api/users/all – List all users (Admin only)
 
-Real-time order tracking
+# Role Management (Admin only)
 
-Email notifications
+POST /api/roles – Create a new role
 
-🛍 User Experience
-Responsive design
+PUT /api/roles – Update an existing role
 
-Shopping cart management
+GET /api/roles – List all roles
 
-Restaurant browsing
+DELETE /api/roles/{id} – Delete a role
 
-Order history
+# Category Management
 
-🏗 Architecture
-RESTful API design
+POST /api/categories – Add a new category (Admin only)
 
-Database relationships with complex queries
+PUT /api/categories – Update an existing category (Admin only)
 
-File upload handling with AWS S3
+GET /api/categories/{id} – Get category by ID
 
-Proper error handling
+GET /api/categories/all – List all categories
 
-🗄 Database Schema
-[Include a simple diagram or description of your database structure]
+DELETE /api/categories/{id} – Delete category (Admin only)
 
-Users, Restaurants, Menu Items, Orders, Order Items tables
+# Menu Management
 
-Proper foreign key relationships
+POST /api/menu – Create a new menu item (Admin only, supports image upload)
 
-Complex queries for order management
+PUT /api/menu – Update menu item (Admin only, supports image upload)
+
+GET /api/menu/{id} – Get menu item by ID
+
+GET /api/menu – List all menu items (optional: filter by category or search)
+
+DELETE /api/menu/{id} – Delete menu item (Admin only)
+
+# Cart Management
+
+POST /api/cart/items – Add an item to the cart
+
+PUT /api/cart/items/increment/{menuId} – Increment quantity of a cart item
+
+PUT /api/cart/items/decrement/{menuId} – Decrement quantity of a cart item
+
+DELETE /api/cart/items/{cartItemId} – Remove item from cart
+
+GET /api/cart – View current shopping cart
+
+DELETE /api/cart – Clear shopping cart
+
+# Order Management
+
+POST /api/orders/checkout – Place an order from the cart (Customer only)
+
+GET /api/orders/{id} – Get order by ID
+
+GET /api/orders/me – Get all orders of the logged-in user
+
+GET /api/orders/order-item/{orderItemId} – Get specific order item
+
+GET /api/orders/all – List all orders (Admin only, filterable by status)
+
+PUT /api/orders/update – Update order status (Admin only)
+
+GET /api/orders/unique-customers – Count unique customers (Admin only)
+
+# Payment Management
+
+POST /api/payments/pay – Initialize payment for an order
+
+PUT /api/payments/update – Update payment status for an order
+
+GET /api/payments/all – List all payments (Admin only)
+
+GET /api/payments/{paymentId} – Get payment by ID
+
+# Review Management
+
+POST /api/reviews – Add a review for a menu item
+
+GET /api/reviews/menu-item/{menuId} – Get all reviews for a menu item
+
+GET /api/reviews/menu-item/average/{menuId} – Get average rating for a menu item
+
+
+
+
+## Key Features
+-- Authentication & Security
+-- JWT-based authentication
+-- Role-based access control (Customer, Admin, Delivery)
+
+-- Secure password handling
+-- Payments & Orders
+-- Stripe payment integration
+-- Real-time order tracking
+-- Email notifications
+-- Shopping cart management
+-- Order history
+-- Architecture
+-- RESTful API design
+-- Database relationships with complex queries
+-- File upload handling with AWS S3
+-- Proper error handling
+--Users, Menu Items, Orders, Order Items tables
+-- Proper foreign key relationships
+-- Complex queries for order management
 
 🧪 Testing
 bash
