@@ -8,7 +8,10 @@ A modern food delivery platform demonstrating full-stack development skills with
 
 **Live Demo**:  http://foodapp-dev-1995.s3-website.eu-north-1.amazonaws.com/home 
 
-**Video Demo**: 
+**Video Demo**: https://youtu.be/WWB3-JPfarQ
+
+## screen-shot: 
+
 
 
 
