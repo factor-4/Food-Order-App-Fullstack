@@ -54,9 +54,9 @@ mvn spring-boot:run
 # Frontend Setup
 
 bash
-cd frontend
-npm install
-npm start
+- cd frontend
+- npm install
+- npm start
 See frontend README for detailed setup
 
 ## API Documentation
