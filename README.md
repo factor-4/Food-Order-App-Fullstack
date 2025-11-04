@@ -44,9 +44,9 @@ cd backend
 Configure application.properties with your database credentials
 
 - Using Maven Wrapper (recommended - works without Maven installation)
- mvnw.cmd spring-boot:run   # Windows Command Prompt
-.\mvnw.cmd spring-boot:run # Windows PowerShell
-./mvnw spring-boot:run     # macOS/Linux
+- mvnw.cmd spring-boot:run   # Windows Command Prompt
+- .\mvnw.cmd spring-boot:run # Windows PowerShell
+- ./mvnw spring-boot:run     # macOS/Linux
 
 # Alternative: If you have Maven installed globally
 mvn spring-boot:run
