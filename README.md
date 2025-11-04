@@ -37,21 +37,21 @@ A modern food delivery platform demonstrating full-stack development skills with
 git clone https://github.com/factor-4/Food-Order-App-Fullstack.git
 cd food-order-app-fullstack
 
-Backend Setup
+## Backend Setup
 
 bash
 cd backend 
--- Configure application.properties with your database credentials
+Configure application.properties with your database credentials
 
-# Using Maven Wrapper (recommended - works without Maven installation)
-mvnw.cmd spring-boot:run   # Windows Command Prompt
+- Using Maven Wrapper (recommended - works without Maven installation)
+ mvnw.cmd spring-boot:run   # Windows Command Prompt
 .\mvnw.cmd spring-boot:run # Windows PowerShell
 ./mvnw spring-boot:run     # macOS/Linux
 
 # Alternative: If you have Maven installed globally
 mvn spring-boot:run
 
-Frontend Setup
+# Frontend Setup
 
 bash
 cd frontend
