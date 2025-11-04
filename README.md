@@ -10,7 +10,35 @@ A modern food delivery platform demonstrating full-stack development skills with
 
 **Video Demo**: https://youtu.be/WWB3-JPfarQ
 
-## screen-shot: 
+
+#  Screenshots
+
+- **Home Page**  
+  ![Home](./assets/home.png)
+
+- **Menu Page**  
+  ![Menu](./assets/menu.png)
+
+- **Menu Details**  
+  ![Menu Details](./assets/menuDetails.png)
+
+- **Cart Page**  
+  ![Cart](./assets/cart.png)
+
+- **Payment Page**  
+  ![Payment Page](./assets/paymentPage.png)
+
+- **Order Confirmation Email**  
+  ![Order Confirmation Email](./assets/orderConfirmationEmail.png)
+
+- **Previous Orders**  
+  ![Previous Orders](./assets/previousOrders.png)
+
+- **Admin Dashboard**  
+  ![Admin Dashboard](./assets/adminDashboard.png)
+
+- **Payment Management (Admin)**  
+  ![Payment Admin](./assets/paymentAdmin.png)
 
 
 
