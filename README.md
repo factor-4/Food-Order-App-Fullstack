@@ -64,13 +64,13 @@ A modern food delivery platform demonstrating full-stack development skills with
 ### Installation
 
 1. **Clone the repository**
-   ```bash
+
 git clone https://github.com/factor-4/Food-Order-App-Fullstack.git
 cd food-order-app-fullstack
 
 ## Backend Setup
 
-bash
+
 cd backend 
 Configure application.properties with your database credentials
 
@@ -84,7 +84,7 @@ mvn spring-boot:run
 
 # Frontend Setup
 
-bash
+
 - cd frontend
 - npm install
 - npm start
@@ -201,7 +201,6 @@ GET /api/reviews/menu-item/average/{menuId} – Get average rating for a menu it
 -- Authentication & Security
 -- JWT-based authentication
 -- Role-based access control (Customer, Admin, Delivery)
-
 -- Secure password handling
 -- Payments & Orders
 -- Stripe payment integration
@@ -218,8 +217,8 @@ GET /api/reviews/menu-item/average/{menuId} – Get average rating for a menu it
 -- Proper foreign key relationships
 -- Complex queries for order management
 
-🧪 Testing
-bash
+# Testing
+
 # Backend tests
 cd backend && mvn test
 
