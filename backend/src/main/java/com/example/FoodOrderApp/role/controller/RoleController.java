@@ -21,7 +21,7 @@ import java.util.List;
 @RequestMapping("/api/roles")
 @RequiredArgsConstructor
 @Tag(name = "Role Management", description = "Endpoints for managing user roles. Admin-only access.")
-@PreAuthorize("hasAuthority('ADMIN')")
+//@PreAuthorize("hasAuthority('ADMIN')")
 public class RoleController {
 
     private final RoleService roleService;
@@ -78,6 +78,7 @@ public class RoleController {
     )
     @GetMapping
     public ResponseEntity<Response<List<RoleDTO>>> getAllRoles() {
+        System.out.println("getroles in controller");
         return ResponseEntity.ok(roleService.getAllRoles());
     }
 
