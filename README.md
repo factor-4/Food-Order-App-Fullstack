@@ -6,7 +6,8 @@
 
 A modern food delivery platform demonstrating full-stack development skills with proper testing, documentation, and production-ready features.
 
-**Live Demo**:  http://foodapp-dev-1995.s3-website.eu-north-1.amazonaws.com/home 
+**Live Demo**:  https://food-order-app-frontend-fawn.vercel.app/home 
+**Backend API**: https://food-order-app-production-6af7.up.railway.app
 
 **Video Demo**: https://youtu.be/WWB3-JPfarQ
 
@@ -47,18 +48,22 @@ A modern food delivery platform demonstrating full-stack development skills with
 
 **Frontend**: React, JavaScript, HTML5, CSS3  
 **Backend**: Spring Boot, Java 21, Maven  
-**Database**: MySQL 8.0  
+**Database**: PostgreSQL 16 
 **Authentication**: JWT  
 **Payment**: Stripe Integration  
-**Storage**: AWS S3  
+**Storage**: Cloudinary 
 **Other**: REST APIs, Responsive Design
+
+**Deployment**: Backend (Railway), Frontend (Vercel)
+
+
 
 ## Quick Start
 
 ### Prerequisites
 - Java 21
 - Node.js 16+
-- MySQL 8.0
+- PostgreSQL 16
 - Maven
 
 ### Installation
@@ -93,7 +98,7 @@ See frontend README for detailed setup
 ## API Documentation
 
 The backend provides a comprehensive REST API for managing users, menu items, orders, payments, and reviews. Full interactive documentation is available via Swagger UI - 
-http://16.171.29.151:8090/swagger-ui/index.html
+https://food-order-app-production-6af7.up.railway.app/swagger-ui/index.html
 .
 
 # Authentication
@@ -211,9 +216,9 @@ GET /api/reviews/menu-item/average/{menuId} – Get average rating for a menu it
 -- Architecture
 -- RESTful API design
 -- Database relationships with complex queries
--- File upload handling with AWS S3
+-- File upload handling with Cloudinary
 -- Proper error handling
---Users, Menu Items, Orders, Order Items tables
+-- Users, Menu Items, Orders, Order Items tables
 -- Proper foreign key relationships
 -- Complex queries for order management
 
